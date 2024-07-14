@@ -1,5 +1,7 @@
 ﻿using Autodesk.Revit.Attributes;
 using Autodesk.Revit.UI;
+//using Microsoft.Extensions.Logging;
+using Serilog;
 using Nice3point.Revit.Toolkit.External;
 
 namespace HostingV7.Commands;
@@ -10,8 +12,12 @@ namespace HostingV7.Commands;
 [Transaction(TransactionMode.Manual)]
 public class StartupCommand : ExternalCommand
 {
+    private readonly ILogger _logger = Host.GetService<ILogger>();
+
     public override void Execute()
     {
+        _logger.Information("Executing the StartupCommand");
+
         var td = new TaskDialog("Testing commands work:")
         {
             MainInstruction = "Testing the adding command is executed.",

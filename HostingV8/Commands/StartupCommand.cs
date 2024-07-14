@@ -12,6 +12,7 @@ public class StartupCommand : ExternalCommand
 {
     public override void Execute()
     {
+
         var td = new TaskDialog("Testing commands work:")
         {
             MainInstruction = "Testing the adding command is executed.",

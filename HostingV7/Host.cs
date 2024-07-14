@@ -1,6 +1,9 @@
 using HostingV7.Config;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Serilog;
+using Serilog.Events;
+using Serilog.Formatting.Json;
 using System.IO;
 using System.Reflection;
 

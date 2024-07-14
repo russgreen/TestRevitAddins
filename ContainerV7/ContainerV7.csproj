@@ -49,7 +49,7 @@
         <PackageReference Include="Nice3point.Revit.Api.RevitAPIUI" Version="$(RevitVersion).*"/>
         <PackageReference Include="Serilog" Version="4.*"/>
         <PackageReference Include="Serilog.Sinks.Debug" Version="3.*"/>
-        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.*"/>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.*"/>
     </ItemGroup>
 
     <ItemGroup>

@@ -1,6 +1,7 @@
 ﻿using Autodesk.Revit.Attributes;
 using Autodesk.Revit.UI;
 using Nice3point.Revit.Toolkit.External;
+using Serilog;
 
 namespace ContainerV8.Commands;
 /// <summary>
@@ -10,8 +11,12 @@ namespace ContainerV8.Commands;
 [Transaction(TransactionMode.Manual)]
 public class StartupCommand : ExternalCommand
 {
+    private readonly ILogger _logger = Host.GetService<ILogger>();
+
     public override void Execute()
     {
+        _logger.Information("Executing the StartupCommand");
+
         var td = new TaskDialog("Testing commands work:")
         {
             MainInstruction = "Testing the adding command is executed.",
