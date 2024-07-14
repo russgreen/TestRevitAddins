@@ -1,4 +1,5 @@
 using HostingV7.Config;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Serilog;
@@ -48,6 +49,6 @@ public static class Host
     /// <returns>A service object of type T or null if there is no such service</returns>
     public static T GetService<T>() where T : class
     {
-        return _host.Services.GetService(typeof(T)) as T;
+        return _host.Services.GetRequiredService(typeof(T)) as T;
     }
 }

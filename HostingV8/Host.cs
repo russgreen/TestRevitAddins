@@ -1,4 +1,6 @@
 using HostingV8.Config;
+using HostingV8.Services;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System.IO;
@@ -26,6 +28,8 @@ public static class Host
         builder.Logging.ClearProviders();
         builder.Logging.AddSerilogConfiguration();
 
+        builder.Services.AddSingleton<IServiceDemo, ServiceDemo>();
+
         _host = builder.Build();
         _host.Start();
     }
@@ -45,6 +49,6 @@ public static class Host
     /// <returns>A service object of type T or null if there is no such service</returns>
     public static T GetService<T>() where T : class
     {
-        return _host.Services.GetService(typeof(T)) as T;
+        return _host.Services.GetRequiredService(typeof(T)) as T;
     }
 }
