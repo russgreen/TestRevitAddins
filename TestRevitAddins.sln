@@ -2,15 +2,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # 17
 VisualStudioVersion = 17.11.35103.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostingV7", "HostingV7\HostingV7.csproj", "{842422C9-0667-45F4-A4B8-3E536D206F94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HostingV7", "HostingV7\HostingV7.csproj", "{842422C9-0667-45F4-A4B8-3E536D206F94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostingV8", "HostingV8\HostingV8.csproj", "{066054DD-2936-4121-89E0-DB27E8C0AD75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HostingV8", "HostingV8\HostingV8.csproj", "{066054DD-2936-4121-89E0-DB27E8C0AD75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContainerV7", "ContainerV7\ContainerV7.csproj", "{E3C59F32-9D02-48AB-98DD-57CF1570FC48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContainerV7", "ContainerV7\ContainerV7.csproj", "{E3C59F32-9D02-48AB-98DD-57CF1570FC48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContainerV8", "ContainerV8\ContainerV8.csproj", "{D7535C32-0A85-425A-9ADE-0919893CBE0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContainerV8", "ContainerV8\ContainerV8.csproj", "{D7535C32-0A85-425A-9ADE-0919893CBE0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostingV7_DefaultBuilder", "HostingV7_DefaultBuilder\HostingV7_DefaultBuilder.csproj", "{469BFC79-B6A4-448B-80F9-39419F8884B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HostingV7_DefaultBuilder", "HostingV7_DefaultBuilder\HostingV7_DefaultBuilder.csproj", "{469BFC79-B6A4-448B-80F9-39419F8884B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostingV8_DefaultBuilder", "HostingV8_DefaultBuilder\HostingV8_DefaultBuilder.csproj", "{DB778A32-19DD-4AF4-A0EF-111CDF195143}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -148,6 +150,30 @@ Global
 		{469BFC79-B6A4-448B-80F9-39419F8884B5}.Release R24|Any CPU.Build.0 = Release R24|Any CPU
 		{469BFC79-B6A4-448B-80F9-39419F8884B5}.Release R25|Any CPU.ActiveCfg = Release R25|Any CPU
 		{469BFC79-B6A4-448B-80F9-39419F8884B5}.Release R25|Any CPU.Build.0 = Release R25|Any CPU
+		{DB778A32-19DD-4AF4-A0EF-111CDF195143}.Debug R20|Any CPU.ActiveCfg = Debug R20|Any CPU
+		{DB778A32-19DD-4AF4-A0EF-111CDF195143}.Debug R20|Any CPU.Build.0 = Debug R20|Any CPU
+		{DB778A32-19DD-4AF4-A0EF-111CDF195143}.Debug R21|Any CPU.ActiveCfg = Debug R21|Any CPU
+		{DB778A32-19DD-4AF4-A0EF-111CDF195143}.Debug R21|Any CPU.Build.0 = Debug R21|Any CPU
+		{DB778A32-19DD-4AF4-A0EF-111CDF195143}.Debug R22|Any CPU.ActiveCfg = Debug R22|Any CPU
+		{DB778A32-19DD-4AF4-A0EF-111CDF195143}.Debug R22|Any CPU.Build.0 = Debug R22|Any CPU
+		{DB778A32-19DD-4AF4-A0EF-111CDF195143}.Debug R23|Any CPU.ActiveCfg = Debug R23|Any CPU
+		{DB778A32-19DD-4AF4-A0EF-111CDF195143}.Debug R23|Any CPU.Build.0 = Debug R23|Any CPU
+		{DB778A32-19DD-4AF4-A0EF-111CDF195143}.Debug R24|Any CPU.ActiveCfg = Debug R24|Any CPU
+		{DB778A32-19DD-4AF4-A0EF-111CDF195143}.Debug R24|Any CPU.Build.0 = Debug R24|Any CPU
+		{DB778A32-19DD-4AF4-A0EF-111CDF195143}.Debug R25|Any CPU.ActiveCfg = Debug R25|Any CPU
+		{DB778A32-19DD-4AF4-A0EF-111CDF195143}.Debug R25|Any CPU.Build.0 = Debug R25|Any CPU
+		{DB778A32-19DD-4AF4-A0EF-111CDF195143}.Release R20|Any CPU.ActiveCfg = Release R20|Any CPU
+		{DB778A32-19DD-4AF4-A0EF-111CDF195143}.Release R20|Any CPU.Build.0 = Release R20|Any CPU
+		{DB778A32-19DD-4AF4-A0EF-111CDF195143}.Release R21|Any CPU.ActiveCfg = Release R21|Any CPU
+		{DB778A32-19DD-4AF4-A0EF-111CDF195143}.Release R21|Any CPU.Build.0 = Release R21|Any CPU
+		{DB778A32-19DD-4AF4-A0EF-111CDF195143}.Release R22|Any CPU.ActiveCfg = Release R22|Any CPU
+		{DB778A32-19DD-4AF4-A0EF-111CDF195143}.Release R22|Any CPU.Build.0 = Release R22|Any CPU
+		{DB778A32-19DD-4AF4-A0EF-111CDF195143}.Release R23|Any CPU.ActiveCfg = Release R23|Any CPU
+		{DB778A32-19DD-4AF4-A0EF-111CDF195143}.Release R23|Any CPU.Build.0 = Release R23|Any CPU
+		{DB778A32-19DD-4AF4-A0EF-111CDF195143}.Release R24|Any CPU.ActiveCfg = Release R24|Any CPU
+		{DB778A32-19DD-4AF4-A0EF-111CDF195143}.Release R24|Any CPU.Build.0 = Release R24|Any CPU
+		{DB778A32-19DD-4AF4-A0EF-111CDF195143}.Release R25|Any CPU.ActiveCfg = Release R25|Any CPU
+		{DB778A32-19DD-4AF4-A0EF-111CDF195143}.Release R25|Any CPU.Build.0 = Release R25|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -3,7 +3,7 @@ using Autodesk.Revit.UI;
 using Microsoft.Extensions.Logging;
 using Nice3point.Revit.Toolkit.External;
 
-namespace HostingV8.Commands;
+namespace HostingV8_DefaultBuilder.Commands;
 /// <summary>
 ///     External command entry point invoked from the Revit interface
 /// </summary>

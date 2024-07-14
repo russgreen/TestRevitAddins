@@ -1,0 +1,11 @@
+﻿<RevitAddIns>
+    <AddIn Type="Application">
+        <Name>HostingV8_DefaultBuilder</Name>
+        <Assembly>HostingV8_DefaultBuilder/HostingV8_DefaultBuilder.dll</Assembly>
+        <AddInId>0E5AEC70-2264-4C08-A7CB-AB430DEE584E</AddInId>
+        <FullClassName>HostingV8_DefaultBuilder.Application</FullClassName>
+        <VendorId>Development</VendorId>
+        <VendorDescription></VendorDescription>
+        <VendorEmail></VendorEmail>
+    </AddIn>
+</RevitAddIns>
