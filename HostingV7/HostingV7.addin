@@ -1,0 +1,11 @@
+﻿<RevitAddIns>
+    <AddIn Type="Application">
+        <Name>HostingV7</Name>
+        <Assembly>HostingV7/HostingV7.dll</Assembly>
+        <AddInId>43369DD0-BEE1-43E1-B495-A66C5FB6673E</AddInId>
+        <FullClassName>HostingV7.Application</FullClassName>
+        <VendorId>Development</VendorId>
+        <VendorDescription></VendorDescription>
+        <VendorEmail></VendorEmail>
+    </AddIn>
+</RevitAddIns>

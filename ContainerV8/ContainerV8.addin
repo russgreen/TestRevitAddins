@@ -1,0 +1,11 @@
+﻿<RevitAddIns>
+    <AddIn Type="Application">
+        <Name>ContainerV8</Name>
+        <Assembly>ContainerV8/ContainerV8.dll</Assembly>
+        <AddInId>E9155C3A-3EED-461F-BCBF-70EAE9D59193</AddInId>
+        <FullClassName>ContainerV8.Application</FullClassName>
+        <VendorId>Development</VendorId>
+        <VendorDescription></VendorDescription>
+        <VendorEmail></VendorEmail>
+    </AddIn>
+</RevitAddIns>
