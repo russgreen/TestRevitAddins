@@ -5,6 +5,7 @@ using Serilog.Events;
 using Serilog.Formatting.Json;
 using System.IO;
 using System.Reflection;
+using HostingV7_DefaultBuilder.Services;
 
 namespace HostingV7_DefaultBuilder;
 /// <summary>
@@ -37,8 +38,7 @@ public static class Host
             .UseSerilog()
             .ConfigureServices((_, services) =>
             {
-                //services.AddSingleton<ISettingsService, SettingsService>();
-                //services.AddTransient<IMessageBoxService, MessageBoxService>();
+                services.AddSingleton<IServiceDemo, ServiceDemo>();
             })
             .Build();
 

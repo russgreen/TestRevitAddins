@@ -2,6 +2,7 @@
 using Autodesk.Revit.UI;
 using Microsoft.Extensions.Logging;
 using Nice3point.Revit.Toolkit.External;
+using HostingV7_DefaultBuilder.Services;
 
 namespace HostingV7_DefaultBuilder.Commands;
 /// <summary>
@@ -11,18 +12,15 @@ namespace HostingV7_DefaultBuilder.Commands;
 [Transaction(TransactionMode.Manual)]
 public class StartupCommand : ExternalCommand
 {
-    private readonly ILogger<StartupCommand> _logger = Host.GetService<ILogger<StartupCommand>>();
+    private ILogger<StartupCommand> _logger;
+    private IServiceDemo _serviceDemo;
 
     public override void Execute()
     {
+        _logger = Host.GetService<ILogger<StartupCommand>>();
+        _serviceDemo = Host.GetService<IServiceDemo>();
+
+        _serviceDemo.DoSomething();
         _logger.LogInformation("Executing the StartupCommand");
-
-        var td = new TaskDialog("Testing commands work:")
-        {
-            MainInstruction = "Testing the adding command is executed.",
-            CommonButtons = TaskDialogCommonButtons.Ok | TaskDialogCommonButtons.Cancel
-        };
-
-        td.Show();
     }
 }
