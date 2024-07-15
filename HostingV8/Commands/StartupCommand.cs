@@ -12,21 +12,15 @@ namespace HostingV8.Commands;
 [Transaction(TransactionMode.Manual)]
 public class StartupCommand : ExternalCommand
 {
-    private readonly ILogger<StartupCommand> _logger = Host.GetService<ILogger<StartupCommand>>();
-
-    private IServiceDemo _serviceDemo = Host.GetService<IServiceDemo>();
+    private ILogger<StartupCommand> _logger; // = Host.GetService<ILogger<StartupCommand>>();
+    private IServiceDemo _serviceDemo; // = Host.GetService<IServiceDemo>();
 
     public override void Execute()
     {
+        _logger = Host.GetService<ILogger<StartupCommand>>();
+        _serviceDemo = Host.GetService<IServiceDemo>();
+
         _serviceDemo.DoSomething();
-        //_logger.LogInformation("Executing the StartupCommand");
-
-        var td = new TaskDialog("Testing commands work:")
-        {
-            MainInstruction = "Testing the adding command is executed.",
-            CommonButtons = TaskDialogCommonButtons.Ok | TaskDialogCommonButtons.Cancel
-        };
-
-        td.Show();
+        _logger.LogInformation("Executing the StartupCommand");
     }
 }

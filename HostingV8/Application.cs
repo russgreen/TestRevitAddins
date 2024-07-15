@@ -1,4 +1,5 @@
 ﻿using HostingV8.Commands;
+using HostingV8.Services;
 using Nice3point.Revit.Toolkit.External;
 
 namespace HostingV8;
@@ -12,6 +13,9 @@ public class Application : ExternalApplication
     {
         Host.Start();
         CreateRibbon();
+
+        var demoService = Host.GetService<IServiceDemo>();
+        demoService.DoSomething();
     }
 
     public override void OnShutdown()

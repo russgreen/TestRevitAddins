@@ -14,6 +14,7 @@ internal class ServiceDemo : IServiceDemo
     {
         _logger = logger;
     }
+
     public void DoSomething()
     {
         _logger.LogDebug("ServiceDemo.DoSomething");
